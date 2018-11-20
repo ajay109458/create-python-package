@@ -11,7 +11,7 @@ SamplePackage/
 ## Define setup file
 `setup.py` is the build script for setuptools. It tells setuptools about your package (such as the name and version) as well as which code files to include.
 
-## define __init__ file
+## Define __init__ file
 When you import your package, methods or variable from this file will be exported.  
 
 ## Load module using pip
