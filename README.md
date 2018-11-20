@@ -30,3 +30,27 @@ import SamplePackage as sp
 sp.getCarName()
 sp.getPersonName()
 ```
+
+## Create a package 
+```
+python setup.py sdist
+```
+
+It creates a tar package, eg. SamplePackage-0.1.tar.gz
+
+## Upload package to test pypi repository
+
+Note: Install twine package using pip
+```
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+```
+
+## Upload package to pypi repository
+```
+twine upload dist/*
+```
+
+### Install module 
+```
+pip install SamplePackage
+```
